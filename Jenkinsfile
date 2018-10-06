@@ -17,6 +17,7 @@ pipeline {
         CI = 'true'
       }
       steps {
+        sh 'npm init'
         sh 'npm run test'
       }
     }
