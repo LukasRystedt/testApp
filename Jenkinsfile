@@ -17,8 +17,7 @@ pipeline {
         CI = 'true'
       }
       steps {
-        sh 'npm install'
-        sh 'npm run test'
+        sh './jenkins/scripts/test.sh'
       }
     }
   }
