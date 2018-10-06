@@ -13,9 +13,12 @@ pipeline {
         sh 'npm install jest-cli'
       }
     }
-    stage('test') {
+    stage('Test') {
+      environment {
+        CI = 'true'
+      }
       steps {
-        sh 'npm test'
+        sh './jenkins/scripts/test.sh'
       }
     }
   }
