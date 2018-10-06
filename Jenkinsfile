@@ -9,8 +9,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'npm install'
-        sh 'npm install jest-cli'
+        sh 'npm intall'
       }
     }
     stage('Test') {
