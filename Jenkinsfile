@@ -1,8 +1,8 @@
 pipeline {
   agent {
     docker {
-      image 'node:8-alpine'
       args '-v /home/debian/nodeDocker'
+      image 'node:6-alpine'
     }
 
   }
