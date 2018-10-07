@@ -2,7 +2,7 @@ pipeline {
   agent {
     docker {
       image 'node:8-alpine'
-      args '-v /home/debian/nodeDocker'
+      args '-v -p 3000:3000'
     }
 
   }
